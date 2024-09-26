@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-gc-moderation": {
+    "ng-ai-comments-moderation": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ng-gc-moderation",
+            "outputPath": "dist/ng-ai-comments-moderation",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-gc-moderation:build:production"
+              "buildTarget": "ng-ai-comments-moderation:build:production"
             },
             "development": {
-              "buildTarget": "ng-gc-moderation:build:development"
+              "buildTarget": "ng-ai-comments-moderation:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -95,6 +95,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

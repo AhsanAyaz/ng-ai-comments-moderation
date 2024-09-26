@@ -10,7 +10,7 @@ export const appConfig: ApplicationConfig = {
       provide: NGGC_API_CONFIG,
       useValue: {
         model: 'gemini-1.5-flash',
-        apiKey: 'YOUR_GEMINI_KEY',
+        apiKey: '', // YOUR_API_KEY
         debug: true, // (optional): enables console log of gemini response
       } as NgGCConfig,
     },
